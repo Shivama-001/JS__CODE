@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+       
+        .box_star{
+            height: 1000px;
+            width: 1900px;
+            background-color: #000000e4;
+           
+            
+
+        }
+        .container{
+            height: 600px;
+            width: 120px;
+            background-color: #fff;
+            border-radius: 20px;
+            position: absolute;
+            z-index: 111;
+        }
+      
+
+   
+
+        .box-star-1{
+             position: relative;
+            height: 8px;
+            width: 8px;
+            border-radius:50% ;
+           
+            background-color: #fff;
+           
+            
+            border: 2px solid #ffffff;
+           
+
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            
+      
+            
+            animation: star 4s ease-out infinite ;
+            opacity: 0;
+
+        }
+        @keyframes star {
+            from{
+                   top: 10px;
+                   left: 100px;
+                  
+                   opacity: 0;
+            }
+        to{
+                top: 700px;
+                left: 2100px;
+                opacity: 1;
+                
+
+            }
+            
+        }
+
+        .box-star-2{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+            
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+
+            animation: stara 1s ease-out infinite ;
+            animation-delay: 1s;
+            opacity: 0;
+    
+
+        }
+        @keyframes stara {
+            from{
+                   top: 0px;
+                   left: 200px;
+                   opacity: -.000001;
+            }
+      to{
+                top: 400px;
+                left: 1000px;
+                opacity: 1;
+                
+
+            }
+            
+        }
+
+        .box-star-3{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+           
+
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+            animation: starb 1s ease-out infinite ;
+            animation-delay: 2s;
+            opacity: 0;
+    
+
+         
+        }
+        @keyframes starb {
+            0%{
+                   top: 200px;
+                   left: 100px;
+                 
+            }
+        100%{
+                top: 800px;
+                left: 1100px;
+                opacity: 1;
+                
+
+            }
+    
+        }
+        .box-star-4{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+           
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+
+            animation: starc 1s ease-out infinite ;
+            animation-delay: 3s ;
+            opacity: 0;
+    
+    
+
+        }
+        @keyframes starc {
+            0%{
+                   top: 150px;
+                   left: 300px;
+                  
+            }
+        100%{
+                top: 700px;
+                left: 1100px;
+                opacity: 2;
+
+            }
+            
+        }
+        .box-star-5{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+           
+
+
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            animation: stard 2s ease-out infinite ;
+            animation-delay: 3.2s ;
+           
+    
+           
+    
+
+        }
+        @keyframes stard {
+            0%{
+                   top: 200px;
+                   left: 600px;
+                  opacity: 0;
+            }
+        100%{
+                top: 800px;
+                left: 1700px;
+                opacity: 1;
+
+            }
+            
+        }
+        .box-star-6{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+           
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+
+            animation: stare 2s ease-out infinite ;
+            animation-delay: 3.5s ;
+           
+
+          
+    
+
+        }
+        @keyframes stare {
+            0%{
+                   top: 150px;
+                   left: 100px;
+                 
+            }
+        100%{
+                top: 700px;
+                left: 1000px;
+                
+
+            }
+            
+        }
+        .box-star-7{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+       
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+
+            animation: starf 2s ease-out infinite ;
+            animation-delay: 3.8s ;
+           
+    
+
+        }
+        @keyframes starf {
+            0%{
+                   top: 100px;
+                   left: 1000px;
+                   opacity: 0;
+            }
+        100%{
+                top: 700px;
+                left: 1600px;
+                opacity: 1;
+                
+
+            }
+            
+        }
+        .box-star-8{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+          
+
+
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            
+            animation: starg 2s ease-out infinite ;
+            animation-delay: 3s ;
+           
+    
+
+        }
+        @keyframes starg {
+            0%{
+                   top: 0;
+                   left: 1200px;
+                   opacity: 0;
+            }
+        100%{
+                top: 700px;
+                left: 1700px;
+                opacity: 1;
+
+            }
+            
+        }
+        .box-star-9{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+          
+
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+
+           
+            animation: starh 2s ease-out infinite ;
+            animation-delay: 2.5s ;
+           
+
+        }
+        @keyframes starh {
+            0%{
+                   top: 0;
+                   left: 900px;
+                   opacity: -.000001;
+            }
+        100%{
+                top: 700px;
+                left: 1300px;
+                
+
+            }
+            
+        }
+        .box-star-10{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+         
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            animation: starss 2s ease-out infinite ;
+            animation-delay: 2.4s ;
+           
+    
+
+        }
+        @keyframes starss {
+            0%{
+                   top: 100px;
+                   left: 1400px;
+                   opacity: 0;
+                  
+            }
+        100%{
+                top: 700px;
+                left: 1800px;
+                opacity: 1;
+                
+
+            }
+            
+        }
+        .box-star-11{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+          
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            animation: starsa 2s ease-out infinite ;
+            animation-delay: 3.9s ;
+           
+    
+
+        }
+        @keyframes starsa {
+            0%{
+                top: 100px;
+                   left: 1500px;
+                   opacity: 0;
+                 
+            }
+        100%{
+               top: 700px;
+                left: 1900px;
+                opacity: 1;
+                
+
+            }
+            
+        }
+        .box-star-12{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+           
+
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            animation: starsb 2s ease-out infinite ;
+            animation-delay: 4.2s ;
+           
+           
+    
+
+        }
+        @keyframes starsb {
+            0%{
+                top: 10px;
+                   left: 1550px;
+                   opacity: 0;
+            }
+        100%{
+            
+            top: 400px;
+                left: 1900px;
+                opacity: 1;
+            }
+            
+        }
+        .box-star-13{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+        
+
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            animation: starsc 2s ease-out infinite ;
+            animation-delay: 2s ;
+           
+            
+
+        }
+        @keyframes starsc {
+            0%{
+                   top: 500px;
+                   left: 0px;
+                   opacity: 0;
+            }
+        100%{
+                top: 800px;
+                left: 600px;
+                opacity: 1;
+
+            }
+            
+        }
+        .box-star-14{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+          
+
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            animation: starsd 1.5s ease-out infinite ;
+            animation-delay: .92s ;
+           
+            
+
+           
+
+        }
+        @keyframes starsd {
+            0%{
+                
+                top: 300px;
+                   left: 0px;
+                   opacity: 0;
+           
+            
+
+            }
+        100%{
+               
+                top: 600px;
+                left: 600px;
+                opacity: 1; 
+
+            }
+            
+        }
+        .box-star-15{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+          
+
+
+            box-shadow: 0 0 10px #ffff,0 0 80px 2px #ffff;
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            
+            animation: starsf 2s ease-out infinite ;
+           
+            
+
+
+          
+
+        }
+        @keyframes starsf {
+            0%{
+                top: 350px;
+                   left: 0px;
+                   opacity: 0; 
+            }
+        100%{
+               top: 900px;
+                left: 850px;
+                opacity: 1; 
+                
+
+            }
+            
+        }
+        .box-star-16{
+             position: relative;
+            height: 2px;
+            width: 8px;
+            border-radius: 50%;
+            box-shadow: #7bdff2 0px -50px 36px -28px inset;
+            
+            border: 2px solid #ffffff;
+           
+
+
+            box-shadow: 0 0 100px 10px #fff,0 0 100px 10px #fff,
+            0 0 100px 10px #fff,
+            0 0 100px 10px #fff
+            ;
+
+            animation: starsff 2s ease-out infinite ;
+
+            
+        }
+        @keyframes starsff {
+            0%{
+                   top: 0;
+                   left: 600px;
+                  
+            }
+        100%{
+                top: 600px;
+                left: 1200px;
+                
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box_star">
+        <div class="box-star-1" style="z-index: 0;"></div>
+        <div class="box-star-2"style="z-index: 0;" ></div>
+        <div class="box-star-3" style="z-index: 0;"></div>
+        <div class="box-star-4" style="z-index: 0;"></div>
+        <div class="box-star-5" style="z-index: 0;"></div>
+        <div class="box-star-6" style="z-index: 0;"></div>
+        <div class="box-star-7" style="z-index: 0;"></div>
+        <div class="box-star-8" style="z-index: 0;"></div>
+        <div class="box-star-9" style="z-index: 0;"></div>
+        <div class="box-star-10" style="z-index: 0;"></div>
+        <div class="box-star-11" style="z-index: 0;"></div>
+        <div class="box-star-12" style="z-index: 0;"></div>
+        <div class="box-star-13" style="z-index: 0;"></div>
+        <div class="box-star-14" style="z-index: 0;"></div>
+        <div class="box-star-15" style="z-index: 0;"></div>
+        <div class="box-star-16" style="z-index: 0;"></div>
+
+    </div>
+    <div class="container">
+
+    </div>
+    
+</body>
+</html>
