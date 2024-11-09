@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body{
+            background-color: rgb(78,78,87);
+            color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0%;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgb(117,117,125);
+            padding: 20px;
+            border-radius: 10px;
+
+
+        }
+
+              h1{
+                font-size: 2em;
+                margin-bottom: 1em;
+              }
+ 
+
+   .countdown{
+    display: flex;
+    justify-content: space-around;
+  gap: 20px;
+   }
+   .countdown div{
+    padding: 20px;
+    background: #dadada;
+    border-radius: 5px;
+    font-size: xx-large;
+    color: black;
+   }
+           h2{
+            font-size: 1.5em;
+            margin-bottom: 1em;
+
+           }
+
+                       .progress-container{
+                        background-color: #fff;
+                        width: 100%;
+                        height: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 1.5em;
+                        overflow: hidden;
+                       }
+                       #progress-bar{
+
+                        background: greenyellow;
+                        width: 0%;
+                        height: 100%;
+                        transition: width 1s ease-in-out;
+                        border-radius: 5px;
+
+                       }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Time Heading
+        day/min/hour/sec blocks
+        progress bar -->
+
+
+ <h1>Countdown Timer</h1>
+
+ <div class="countdown">
+    <div>
+        <span id="days">00</span>
+        Days
+    </div>
+    <div>
+        <span id="hours">00</span>
+        hours
+    </div>
+    <div>
+        <span id="minutes">00</span>
+        minutes
+    </div>
+    <div>
+       <span id="seconds">00</span>
+       seconds
+    </div>
+ </div>
+<h2>Progress :</h2>
+ <div class="progress-container">
+    <div id="progress-bar"></div>
+ </div>
+
+
+
+
+    </div>
+
+    <script>
+       const endDate = new Date('30 oct ,2024 13:01:00').getTime();
+       const startDate = new Date().getTime();
+
+
+        //function for updating
+
+       function updateTimer()
+       {
+            const now = new Date().getTime();
+
+            const distanceCovered = now - startDate;
+            const distancePending = endDate-now;
+            
+            //time  -> milli seconds
+
+             //calculate days hours min sec 
+             //1 day = 24*60*60 *11000 ms
+
+
+
+             const days = Math.floor(distancePending / (24 * 60 * 60 *1000));
+             const hrs = Math.floor((distancePending%(24 * 60 * 60 *100) / (60 * 60 * 1000)));
+             const mins = Math.floor((distancePending % (60* 60  * 1000))/(60*1000));
+             const secs = Math.floor((distancePending%(60*1000))/(1000));
+
+
+             //populate in UI
+
+             document.getElementById("days").innerHTML = days;
+             document.getElementById("hours").innerHTML = hrs;
+             document.getElementById("minutes").innerHTML = mins;
+             document.getElementById("seconds").innerHTML = secs;
+             
+     //calculate width percentage
+
+     const totlDistance = endDate - startDate;
+
+     const percentageDistance =  (distanceCovered/totlDistance)*100;
+
+     //set  width for progress bar
+
+     document.getElementById("progress-bar").style.width= percentageDistance + "%";
+
+
+
+        // if(distancePending < 0)
+        // {
+        //     clearInterval();
+        // }
+
+ 
+
+
+
+       }
+
+       setInterval(updateTimer,1000)
+
+//         const endDate = new Date('30 oct ,2024 23:60:00').getTime();
+//         const startDate = new Date().getTime();
+
+          
+//    let x     =     setInterval(
+//    function updateTimer()
+//    {
+//         const endDate = new Date('30 oct ,2024 12:10:00').getTime();
+//         const startDate = new Date().getTime();
+
+
+//         //function for updating
+
+//         function updateTimer()
+//         {
+//             const now = new Date().getTime();
+
+//             const distanceCovered = now - startDate;
+//             const distancePending = endDate-now;
+            
+//             //time  -> milli seconds
+
+//              //calculate days hours min sec 
+//              //1 day = 24*60*60 *11000 ms
+
+
+
+//              const days = Math.floor(distancePending / (24 * 60 * 60 *1000));
+//              const hrs = Math.floor((distancePending%(24 * 60 * 60 *100) / (60 * 60 * 1000)));
+//              const mins = Math.floor((distancePending % (60* 60  * 1000))/(60*1000));
+//              const secs = Math.floor((distancePending%(60*1000))/(1000));
+
+
+//              //populate in UI
+
+//              document.getElementById("days").innerHTML = days;
+//              document.getElementById("hours").innerHTML = hrs;
+//              document.getElementById("minutes").innerHTML = mins;
+//              document.getElementById("seconds").innerHTML = secs;
+             
+//      //calculate width percentage
+
+//      const totlDistance = endDate - startDate;
+
+//      const percentageDistance =  (distanceCovered/totlDistance)*100;
+
+//      //set  width for progress bar
+
+//      document.getElementById("progress-bar").style.width= percentageDistance + "%";
+
+
+
+//         if(distancePending < 0)
+//         {
+//             clearInterval(x);
+//             document.getElementById("countdown").innerHTML="EXPIRED";
+//             document.getElementById("progress-bar").style.width="100%";
+//         }
+
+ 
+
+
+//    } , 1000);
+
+
+
+
+
+// //         const minute = 1000 * 60;
+// // const hour = minute * 60;
+// // const day = hour * 24;
+// // const year = day * 365;
+
+// // // Divide Time with a year
+// // const d = new Date();
+// // let years = Math.round(d.getTime() / year);
+    </script>
+    
+</body>
+</html>
